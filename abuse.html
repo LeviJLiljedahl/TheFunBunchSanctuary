@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>The Fun Bunch Sanctuary - Reporting Pet Abuse or Neglect</title>
+    <link rel="stylesheet" href="stylesheets/fun_bunch.css">
+    <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>The Fun Bunch Sanctuary</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a>
+            <ul>
+              <li><a href="what_do.html">What We Do</a></li>
+              <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+          </li>
+          <li><a href="bunch.html">Meet the Bunch</a></li>
+          <li><a href="help.html">How to Help</a>
+            <ul>
+              <li><a href="donate.html">Donate or Volunteer</a></li>
+              <li><a href="abuse.html">Reporting Pet Abuse or Neglect</a></li>
+              <li><a href="care.html">Taking Care of Your Pets</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>The Fun Bunch Sanctuary - Reporting Pet Abuse or Neglect</h2>
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+              Feel free to skip this section if you would like to remain 
+              anonymous. 
+            </p>
+            <label for="reporterFirstName">First Name: </label>
+            <input type="text" name="reporterFirstName" id="reporterFirstName">
+            
+            <label for="reporterLastName">Last Name: </label>
+            <input type="text" name="reporterLastName" id="reporterLastName">
+            
+            <label for="reporterEmail">Email: </label>
+            <input type="email" name="reporterEmail" id="reporterEmail" placeholder="levi@funbunch.com">
+          </fieldset>
+          <fieldset>
+            <legend>Your Tip of Abuse or Neglect</legend>
+            <p>
+              Please fill out as much information as you can in order to help
+              us and any animal in need. Thank you!
+            </p>
+            <label for="suspectFirstName">First Name of Suspected Abuser: </label>
+            <input type="text" name="suspectFirstName" id="suspectFirstName">
+            
+            <label for="suspectedLastName">Last Name of Suspected Abuser: </label>
+            <input type="text" name="suspectedLastName" id="suspectedLastName">
+            
+            <label for="suspectedLocation">* Location (Be as Specific as Possible): </label>
+            <textarea required id="suspectedLocation" name="suspectedLocation"></textarea>
+            
+            <label for="issue">*Alleged Issue: </label>
+            <select required id="issue" name="issue"> 
+              <option selected value> Select One</option>
+              <option value="abuse">Possible Abuse</option>
+              <option value="neglect">Possible Neglect</option>
+              <option value="conditions">Concerning Conditions</option>
+              <option value="abandoned">Possible Abandonment</option>
+              <option value="other">Something Else</option>
+            </select>
+         
+            <label for="abuseReport">*Any other Useful Information:</label>
+            <textarea required id="abuseReport" name="abuseReport"></textarea>
+            
+            <input type="submit" value="Report">
+          </fieldset>
+        </form>
+        <p>For more resources and more ways to report animal abuse, please check
+          out the following links. Thank You!
+        </p>
+        <ul>
+          <li><a href="https://www.peta.org/about-peta/contact-peta/report-cruelty/">
+              PETA: Report Cruelty to Animals</a></li>
+          <li><a href="https://www.aspca.org/investigations-rescue/report-animal-cruelty">
+              ASPCA: Report Animal Cruelty</a></li>
+          <li>Contact your local non-emergency police department to 
+              report abuse </li>
+          <li>If you witness an animal in a life-threatening situation, 
+              call 9-1-1.</li>
+        </ul>
+      </main>
+      <footer>
+        <small>
+          Copyright &copy; 2021 The Fun Bunch Sanctuary<br>
+          All Photographs are property of The Fun Bunch Sanctuary and are not
+          to be used without our consent.
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>

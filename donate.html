@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>The Fun Bunch Sanctuary - Donate or Volunteer</title>
+    <link rel="stylesheet" href="stylesheets/fun_bunch.css">
+    <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>The Fun Bunch Sanctuary</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a>
+            <ul>
+              <li><a href="what_do.html">What We Do</a></li>
+              <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+          </li>
+          <li><a href="bunch.html">Meet the Bunch</a></li>
+          <li><a href="help.html">How to Help</a>
+            <ul>
+              <li><a href="donate.html">Donate or Volunteer</a></li>
+              <li><a href="abuse.html">Reporting Pet Abuse or Neglect</a></li>
+              <li><a href="care.html">Taking Care of Your Pets</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>The Fun Bunch Sanctuary - Donate or Volunteer</h2>
+        <p>
+          Are you interested in making a donation to The Fun Bunch Sanctuary,
+          interested in volunteering, or simply in learning more about these things? 
+          Please fill out the information below and
+          we will reach out to you personally. Thank you for your support!
+        </p>
+        <p> All fields marked with an asterisk (*) are required. Thank You!</p>
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">*First Name: </label>
+            <input required type="text" name="firstName" id="firstName">
+            
+            <label for="lastName">*Last Name: </label>
+            <input required type="text" name="lastName" id="lastName">
+            
+            <label for="email">*Email: </label>
+            <input required type="email" name="email" id="email" placeholder="levi@funbunch.com">
+
+            <label for="reason">*What would you like to do: </label>
+            <select required id="reason" name="reason"> 
+              <option selected value > Select One</option>
+              <option value="donation">Make a Donation </option>
+              <option value="volunteer">Volunteer</option>
+              <option value="learnDonation">Learn more about making a Donation</option>
+              <option value="learnVolunteer">Learn more about Volunteering</option>
+            </select>
+          </fieldset>
+          <fieldset> 
+            <legend>For those looking to Volunteer</legend>
+            <label for="frequency">How often are you interested in volunteering: </label>
+            <select id="frequency" name="fequency"> 
+              <option selected value="notApplicable">N/A </option>
+              <option value="once">Just Once, for now.</option>
+              <option value="few">A few times, when possible</option>
+              <option value="fequently">On a regular basis</option>
+            </select>
+            
+            <label for="firstTime">What is the first day you would like to volunteer:</label>
+            <input type="date" name="firstTime" id="firstTime">
+            
+            <label for="experience">Please include any experience in animal care:</label>
+            <textarea id="experience" name="experience"></textarea>
+         
+            <label for="messageVolunteer">Is there anything else we should know:</label>
+            <textarea id="messageVolunteer" name="messageVolunteer"></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>For those looking to make a donation</legend>
+            <label for="willDonate">What are you interested in Donating: </label>
+            <select id="willDonate" name="willDonate"> 
+              <option selected value="notApplicable">N/A </option>
+              <option value="money">Money</option>
+              <option value="supplies">Supplies</option>
+              <option value="other">Other</option>
+            </select>
+            
+            <label for="messageDonate">Is there anything else we should know:</label>
+            <textarea id="messageDonate" name="messageDonate"></textarea>
+          </fieldset>
+          
+          <input type="submit" value="Submit">
+        </form>
+      </main>
+      <footer>
+        <small>
+          Copyright &copy; 2021 The Fun Bunch Sanctuary<br>
+          All Photographs are property of The Fun Bunch Sanctuary and are not
+          to be used without our consent.
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>

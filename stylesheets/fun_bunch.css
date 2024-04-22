@@ -1,0 +1,454 @@
+      /*Start With Mobile Platform*/
+body {
+  background-color: #D9E7F9;
+  color: #333;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header {
+  background-color: #FFF;
+}
+
+h1 {
+  background-color: #FFF;
+  background-image: url(../images/funbunchheader.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom: 1px solid #300;
+  height: 100px;
+  margin: 0;
+  text-indent: -9999px;
+}
+
+h2 {
+  text-align: center;
+}
+
+nav {
+  float: none;
+  margin-bottom: 1em;
+  padding: 0;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  border: 5px solid #FFF;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #000000;
+  display: inline-block;
+  font-size: 120%;
+  margin: 1%;
+  overflow: hidden;
+  text-align: center;
+  width: 90%;
+}
+
+nav a {
+  background-color: #4B87D3;
+  color: #FFF;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+nav a:link {
+  color:#000;
+}
+
+nav a:visited {
+  color: #000;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #FFFFFF;
+  color: #126FE6;
+}
+
+main a:link {
+  color: #00f;
+}
+
+main a:visited {
+  color: #800;
+}
+
+main a:hover,
+main a:focus {
+  color: #F00;
+}
+
+main {
+  margin: 25px;
+}
+
+nav ul ul {
+  display: none;
+}
+
+footer {
+  background-color: #465D7A;
+  color: #FFF;
+  padding: 20px;
+  text-align: center; 
+  width: auto;
+}
+     /*mobile gallery*/
+article a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+}
+  
+#mobile_gallery > p {
+  font-size: 20px;
+  margin-bottom: 75px;
+  margin-top: 75px;
+  text-align: center;
+}
+
+article p {
+  display: block;
+  font-size: 20px;
+  margin-left: auto;
+  margin-bottom: 75px;
+  margin-right: auto;
+  width: 30%;
+}
+      /*Forms */
+legend {
+  font-size: 20px;
+  font-style: italic;
+}
+
+form {
+  padding: 10px;
+  width: auto; 
+}
+
+label {
+  clear: left;
+  display: block;
+  float: left;
+  margin-top: 10px;
+  padding-right: 10px;
+  text-align: right;
+  width: auto;
+}
+
+input {
+  display: block;
+  margin-top: 10px;
+}
+
+textarea {
+  display: block;
+  margin: 5px;
+}
+
+select {
+  margin: 10px;
+}
+
+input[type = "submit"] {
+  display: block;
+  margin-left: 110px;
+  width: 100px;
+}
+        /*tables*/
+table { 
+  background-color: #FFF;
+  border: solid;
+  margin: auto;
+  width: 80%;
+}
+
+td, th {
+  border: solid;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #126FE6;
+  color: #FFF;
+}
+
+@media only screen and (min-width: 600px ) {
+  h1 {
+  background-color: #FFF;
+  background-image: url(../images/funbunchheader.png);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
+  border-bottom: 1px solid #300;
+  height: 100px;
+  margin: 0;
+  text-indent: -9999px;
+  }
+
+  nav {
+    float: left;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    padding: 1%;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  nav li {
+    margin-right: 0;
+    width: 186px;
+  }
+}
+
+@media only screen and (max-width: 490px ) {
+  aside {
+    display: none;
+  }
+  
+  #home_gallery {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 924px) {
+  
+  #gallery {
+    display: none;
+  }
+  
+  img {
+    border: 5px solid #FFF;
+  }
+  
+  #logo img {
+    background-color: #FFF;
+  }
+  
+  #yogi_care {
+    display: none;
+  }
+  
+  #yogi_mission {
+    display: none;
+  }
+}
+        /*Big Screens*/
+@media only screen and (min-width: 925px ) {
+  body {
+  background-color: #126FE6;
+  background-image: linear-gradient(to top, #126FE6, #eeeeee);
+  background-repeat: no-repeat;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  #wrapper {
+    background-color: #D9e7f9;
+    box-shadow: 5px 5px 5px #000000;
+    margin: 0 auto;
+    max-width: 1150px;
+    min-width: 900px;
+    }
+
+  #wrapper footer {
+    background-color: #465D7A;
+    color: #FFF;
+    padding: 1em;
+    text-align: center; 
+  }
+  
+  #panorama {
+    background-image: url(../images/sanctuary2.jpg);
+    background-repeat: no-repeat;
+    border: 10px solid #FFF;
+    display: flex;
+    height: 270px;
+    max-width: 1400px;
+  }
+       /*Home Page Formatting*/
+  #panorama h2 {
+    color: #ffffff;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 4em;
+    padding-left: 5%;
+    padding-top: 125px;
+  }
+  
+  #logo {
+    background-color: #FFF;
+    border: 5px solid #FFF;
+    box-sizing: border-box;
+    float: left;
+    margin: 20px;
+    width: 300px;
+  }
+  
+  aside {
+    box-sizing: border-box;
+    display: block;
+    float: right;
+    padding: 1em;
+  }
+  
+  figure {
+    border: 5px solid #FFF;
+    margin-top: 50px;
+  }
+  
+  #newest {
+    clear: both;
+    float: left;
+    margin: 20px;
+  }
+  
+  #newest p {
+    max-width: 300px;
+  }
+  
+  #newest img {
+    border: 5px solid #FFF;
+  }
+  
+  #content { 
+    display: flex;
+  }
+
+  main{ 
+    padding: 1em;
+  }
+  
+  footer { 
+    clear: both;
+  }
+
+  #home_gallery {
+    clear: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #home_gallery img {
+    border: 5px solid #fff;
+    box-shadow: 10px 10px 10px #777;
+    margin: 10px;
+  }
+  
+  nav {
+    border-bottom: solid;
+    width: 100%;
+  }
+  
+  nav > ul {
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+  } 
+  
+  nav li{
+    border: solid;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    width: 186px;
+  }
+  
+  nav a {
+    background-color: #D9E7F9 ;
+    color: #FFF;
+  }
+  
+  nav ul ul {
+  background-color: #4B87D3;
+  display: none;
+  font-size: 16px;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  }
+
+  nav ul ul li {
+    border: 5px solid #FFF;
+    display: block;
+    margin-left: 0;
+    overflow: hidden;
+    padding-left: 1em;
+    text-align: left;
+    width: 160px;
+  }
+
+  nav li:hover ul {
+    display: block;
+  }
+      /*Meet Photo Gallery*/
+  #gallery {
+    background-color: #B0CAEC;
+    float: left;
+    font-size: 20px;
+    margin: 15px;
+    margin-top: 95px;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    width: 95%;
+  }
+  
+  #gallery ul {
+    list-style-type: none;
+    width: 400px;
+  }
+  
+  #gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+  }
+  
+  #gallery img {
+    border: 4px solid #FFF;
+  }
+  
+  #gallery a {
+    color: #000;
+    font-style: italic;
+    text-decoration: none;
+  }
+  
+  #gallery span {
+    left: -9999px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #gallery a:hover span {
+    border: 10px solid #FFF;
+    left: 54%;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    top: 175px;
+    transform: rotate(5deg);
+  }
+  
+  #mobile_gallery {
+    display: none;
+  }
+}
